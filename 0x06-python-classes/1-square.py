@@ -1,10 +1,16 @@
 #!/usr/bin/python3
-class Square:
-    """Represents a square.
-    Private instance attribute: size.
-    Instantiation with size (no type/value verification).
-    """
+"""defines a class called square"""
 
+
+class Square:
+    """Initialize a square
+    Args:
+        __size (int): size of the square
+    """
     def __init__(self, size):
-        """Initializes the data."""
+        """Initialize a square
+        Args:
+            size (int): size of the square
+        Returns: None
+        """
         self.__size = size
