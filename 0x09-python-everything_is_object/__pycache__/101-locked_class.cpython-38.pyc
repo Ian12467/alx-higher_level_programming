@@ -2,8 +2,8 @@ U
 Zj@sdZGdddZdS)z
 File: 101-locked_class.py
 Desc: This module contains one a class definition, LockedClass
-Author: Ilodiuba Victor (victornnamdii)
-Date Created: 26 Jul 2022
+Author: Ian Otieno (Ian12467)
+Date Created: 20 Sep 2022
 c@seZdZdZddZdS)LockedClassz
     This class prevents the user from dynamically creating new
     instance attributes, except if the new instance attribute
