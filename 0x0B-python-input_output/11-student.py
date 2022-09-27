@@ -1,30 +1,36 @@
 #!/usr/bin/python3
-"""Module 11-student.
-Creates a Student class.
+"""
+File: 9-student.py
+Desc: This module contains one class; Student
+Author: Ian Otieno (Ian12467)
+Date Created: 26 Sep 2022
 """
 
 
 class Student:
-    """Class that defines a student.
-    Public attributes:
-        - first_name
-        - last_name
-        - age
-    Public method to_json().
     """
-
+    Reoresentation of the class Student
+    """
     def __init__(self, first_name, last_name, age):
-        """Initializes the Student instance."""
-
+        """
+        Initialization of the class
+        """
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        """Retrieves a dictionary representation
-        of a Student instance.
-
-        Returns: the dict representation of the instance.
+    def to_json(self, attrs=None):
         """
-
+        Retrieves a dictionary representation of a Student instance
+        """
+        if type(attrs) == list and all(type(i) == str for i in attrs):
+            return ({key: getattr(self, key)
+                    for key in attrs if hasattr(self, key)})
         return self.__dict__
+
+    def reload_from_json(self, json):
+        """
+        Replaces all attributes of the Student instance
+        """
+        for key, value in json.items():
+            setattr(self, key, value)
