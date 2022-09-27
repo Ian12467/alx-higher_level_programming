@@ -18,4 +18,4 @@ Files | Description
 [11-student.py](./11-student.py) | Python class Student
 [12-pascal_triangle.py](./14-pascal_triangle.py) | Python function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n
 [100-append_after.py](./100-append_after.py) | Python function that inserts a line of text to a file, after each line containing a specific string
-[101-generator.py](./101-generator.py)
+[101-generator.py](./101-generator.py) | script that reads stdin line by line and computes metrics
