@@ -2,8 +2,8 @@
 """
 File: base.py
 Desc: THis module contains a class; Base
-Author: Ilodiuba Victor (victornnamdii)
-Date Created: 04 Aug 2022
+Author: IAN OTIENO (Ian124+7)
+Date Created: 3 oct 2022
 """
 
 import csv
